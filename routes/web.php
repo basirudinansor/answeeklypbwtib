@@ -12,7 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/// ans.com/ localhost:8000/
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+
