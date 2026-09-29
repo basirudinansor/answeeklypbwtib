@@ -14,11 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 /// ans.com/ localhost:8000/
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', [
+        "title" => "Home",
+    ]);
 });
 
 Route::get('/profile', function () {
-    return view('profile');
+    return view('profile', [
+        "title" => "Profile",
+        "jeneng" => "Basirudin Ansor",
+        "nim" => "A112233",
+        "prodi" => "Teknologi Informasi",
+        "gambar" => "ans.jpeg",
+    ]);
+});
+
+Route::get('/berita', function () {
+    return view('berita', [
+        "title" => "Berita",
+    ]);
 });
 
 
